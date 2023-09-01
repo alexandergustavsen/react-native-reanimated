@@ -295,7 +295,7 @@ BOOL REANodeFind(id<RCTComponent> view, int (^block)(id<RCTComponent>))
   });
 }
 
-- (BOOL)hasLayoutAnimation:(REAUIView *)view
+- (BOOL)hasLayoutAnimation:(UIView *)view
 {
   return REANodeFind(view, ^(id<RCTComponent> view) {
     return [self->_exitingSubviewsCountMap objectForKey:view.reactTag] != nil ||

@@ -102,8 +102,8 @@
       for (UIView *view in permanentlyRemovedChildren) {
         [originalSelf.animationsManager endAnimationsRecursive:view];
       }
-      if (![originalSelf.animationsManager hasLayoutAnimation:(REAUIView *)container]) {
-        [originalSelf.animationsManager removeAnimationsFromSubtree:(REAUIView *)container];
+      if (![originalSelf.animationsManager hasLayoutAnimation:(UIView *)container]) {
+        [originalSelf.animationsManager removeAnimationsFromSubtree:(UIView *)container];
       }
     }
   }
