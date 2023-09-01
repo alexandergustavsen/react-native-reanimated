@@ -43,6 +43,7 @@ BOOL REANodeFind(id<RCTComponent> view, int (^block)(id<RCTComponent>));
 - (void)viewDidMount:(UIView *)view withBeforeSnapshot:(REASnapshot *)snapshot withNewFrame:(CGRect)frame;
 - (REASnapshot *)prepareSnapshotBeforeMountForView:(UIView *)view;
 - (BOOL)wantsHandleRemovalOfView:(UIView *)view;
+- (BOOL)hasLayoutAnimation:(REAUIView *)view;
 - (void)removeAnimationsFromSubtree:(UIView *)view;
 - (void)reattachAnimatedChildren:(NSArray<id<RCTComponent>> *)children
                      toContainer:(id<RCTComponent>)container
